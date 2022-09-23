@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:wengxs/cloud2021-config.git
+          search-paths:
+            - cloud2021-config
+      label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8761.com:8761/eureka #,http://eureka8762.com:8762/eureka
