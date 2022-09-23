@@ -1,9 +1,0 @@
-server:
-  port: 8001
-
-eureka:
-  instance:
-    instance-id: payment8001
-    prefer-ip-address: true
-
-timeout: 0
